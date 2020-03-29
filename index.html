@@ -67,6 +67,7 @@
 <script>
     // Smooth Scrolling
     $('.btn').on('click', function(event) {
+        // Hash is the id
         if (this.hash !== '') {
             event.preventDefault();
             const hash = this.hash;
@@ -74,6 +75,7 @@
                 {
                     scrollTop: $(hash).offset().top
                 },
+                // Set scrolling speed
                 800
             );
         }
